@@ -287,6 +287,7 @@ ul {
 .text-wrap {
     line-height: 1.5;
     margin: 0 5px;
+    padding: 5px;
 }
 
 .menu-title {
@@ -434,4 +435,114 @@ ul {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 125px;
+}
+
+/* The Rose Pavilion */
+.rose-pavilion-container {
+    padding: 133px 0;
+}
+
+.rose-pavilion {
+    border: 10px solid rgba(218, 221, 226, 0.3);
+    width: 1440px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    min-height: 425px;
+    object-fit: cover;
+}
+
+.thumnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.thumnail img {
+    width: 100%;
+    max-width: 290px;
+    height: 100%;
+    max-height: 265px;
+    object-fit: cover;
+}
+
+.explore-now {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.explore-now:hover {
+    color: #5F5C6D;
+}
+
+/* Exclusive Venues */
+.exclusive-venues-container {
+    padding: 120px 0;
+    background: #F0EEEA;
+}
+
+.exclusive-venues {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 10px solid rgba(218, 221, 226, 0.3);
+    border-top: none;
+}
+
+.exclusive-venues::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px; /* Length of the top border */
+    border-top: 10px solid rgba(218, 221, 226, 0.3);
+}
+
+.exclusive-venues .text-wrap {
+    width: 650px;
+    height: 595px;
+    padding: 0 40px;
+}
+
+.left-aligned-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.exclusive-venues .gallery img {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 530px;
+    object-fit: cover;
+    position: absolute;
+    right: -50px;
+    top: -50px;
 }
